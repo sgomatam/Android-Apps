@@ -1,0 +1,88 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="62" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="1920" page-height="1600" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="969" genus-name="get-start-value" has-focus="yes" >
+<Location><X>331</X><Y>363</Y></Location>
+<Label>get start value</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="982" ></BlockConnector></Plug>
+</Block>
+<Block id="956" genus-name="close-screen" >
+<Location><X>77</X><Y>147</Y></Location>
+<Label>close screen</Label>
+<BeforeBlockId>952</BeforeBlockId>
+</Block>
+<Block id="952" genus-name="Button-Click" >
+<Location><X>49</X><Y>114</Y></Location>
+<Label>CancelButton.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="956" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="958" genus-name="Button-Click" >
+<Location><X>47</X><Y>255</Y></Location>
+<Label>SaveButton.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="962" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>Name.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="964" genus-name="componentGetter" >
+<Location><X>329</X><Y>291</Y></Location>
+<Label>Name.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="968" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="968" genus-name="string-empty?" >
+<Location><X>195</X><Y>291</Y></Location>
+<Label>is text empty?</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="970" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" position-type="single" con-block-id="964" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="970" genus-name="logical-not" >
+<Location><X>149</X><Y>291</Y></Location>
+<Label>not</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="962" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="968" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="962" genus-name="if" >
+<Location><X>75</X><Y>288</Y></Location>
+<Label>if</Label>
+<BeforeBlockId>958</BeforeBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="970" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="982" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="982" genus-name="TinyDB-StoreValue" >
+<Location><X>127</X><Y>332</Y></Location>
+<Label>DB.StoreValue</Label>
+<BeforeBlockId>962</BeforeBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="984" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="valueToStore" position-type="single" con-block-id="969" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>Name.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="984" genus-name="componentGetter" >
+<Location><X>331</X><Y>335</Y></Location>
+<Label>Name.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="982" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="-1320635658" component-id="CancelButton" component-genus="Button" component-version="4" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="0" component-id="SaveScreen" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1430212816" component-id="DB" component-genus="TinyDB" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="831766686" component-id="SaveButton" component-genus="Button" component-version="4" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1903186754" component-id="HorizontalArrangement1" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-280020292" component-id="LabelName" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1107874533" component-id="Name" component-genus="TextBox" component-version="4" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>

@@ -1,0 +1,4 @@
+#|
+$JSON
+{"YaVersion":"62","Source":"Form","Properties":{"$Name":"SaveScreen","$Type":"Form","$Version":"8","Uuid":"0","Title":"SaveScreen","$Components":[{"$Name":"HorizontalArrangement1","$Type":"HorizontalArrangement","$Version":"2","Uuid":"1903186754","Width":"-2","$Components":[{"$Name":"LabelName","$Type":"Label","$Version":"2","Uuid":"-280020292","FontSize":"16","Text":"Name"},{"$Name":"Name","$Type":"TextBox","$Version":"4","Uuid":"-1107874533","Hint":"Hint for TextBox1","Width":"200"},{"$Name":"SaveButton","$Type":"Button","$Version":"4","Uuid":"831766686","FontBold":"True","FontSize":"16","Text":"SAVE"}]},{"$Name":"CancelButton","$Type":"Button","$Version":"4","Uuid":"-1320635658","Text":"CANCEL"},{"$Name":"DB","$Type":"TinyDB","$Version":"1","Uuid":"-1430212816"}]}}
+|#
